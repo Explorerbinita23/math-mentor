@@ -1,0 +1,54 @@
+TOPIC: Linear Algebra
+SUBTOPIC: Matrices
+Matrix addition: (A+B)ᵢⱼ = Aᵢⱼ + Bᵢⱼ (same dimensions required)
+Scalar multiplication: (cA)ᵢⱼ = c × Aᵢⱼ
+Matrix multiplication: (AB)ᵢⱼ = Σₖ Aᵢₖ × Bₖⱼ
+  Note: AB ≠ BA in general (non-commutative)
+Transpose: (Aᵀ)ᵢⱼ = Aⱼᵢ
+(AB)ᵀ = BᵀAᵀ
+(A + B)ᵀ = Aᵀ + Bᵀ
+
+SUBTOPIC: Determinants
+2×2: det([a,b;c,d]) = ad - bc
+3×3: Expansion along first row:
+det(A) = a₁₁(a₂₂a₃₃ - a₂₃a₃₂) - a₁₂(a₂₁a₃₃ - a₂₃a₃₁) + a₁₃(a₂₁a₃₂ - a₂₂a₃₁)
+Properties:
+- det(AB) = det(A) × det(B)
+- det(Aᵀ) = det(A)
+- det(cA) = cⁿ × det(A) for n×n matrix
+- If two rows are identical: det = 0
+- Swapping rows changes sign of det
+
+SUBTOPIC: Inverse Matrix
+A⁻¹ exists iff det(A) ≠ 0
+For 2×2: [a,b;c,d]⁻¹ = (1/det) × [d,-b;-c,a]
+AA⁻¹ = A⁻¹A = I (identity matrix)
+(AB)⁻¹ = B⁻¹A⁻¹
+
+SUBTOPIC: System of Linear Equations (Ax = b)
+Cramer's rule: xᵢ = det(Aᵢ)/det(A)
+  where Aᵢ is A with ith column replaced by b
+Gaussian elimination: Row reduce augmented matrix [A|b]
+- Unique solution: det(A) ≠ 0
+- No solution: inconsistent system
+- Infinite solutions: dependent equations
+
+SUBTOPIC: Eigenvalues and Eigenvectors
+Av = λv where λ = eigenvalue, v = eigenvector
+Characteristic equation: det(A - λI) = 0
+For 2×2: λ² - tr(A)λ + det(A) = 0
+tr(A) = sum of diagonal elements
+Sum of eigenvalues = tr(A)
+Product of eigenvalues = det(A)
+
+SUBTOPIC: Rank and Linear Independence
+Rank = number of linearly independent rows (or columns)
+Vectors are linearly independent if no one is a linear combination of others
+For n vectors in Rⁿ: Independent iff det of matrix formed ≠ 0
+Rank-nullity theorem: rank(A) + nullity(A) = n (number of columns)
+
+COMMON MISTAKES:
+- AB ≠ BA (matrix multiplication is NOT commutative)
+- (A+B)² ≠ A² + 2AB + B² because AB ≠ BA
+- Forgetting sign pattern (+,-,+,-...) in cofactor expansion
+- det(A+B) ≠ det(A) + det(B)

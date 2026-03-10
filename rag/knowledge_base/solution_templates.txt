@@ -1,0 +1,48 @@
+TOPIC: JEE Solution Templates & Common Patterns
+
+TEMPLATE: Quadratic Equation Problems
+Step 1: Identify if equation is already in standard form ax²+bx+c=0
+Step 2: Check if factoring is possible (look for integer roots)
+Step 3: If not factorable, apply quadratic formula: x = (-b ± √(b²-4ac))/2a
+Step 4: Compute discriminant D = b²-4ac first
+Step 5: Verify answers by substitution
+
+TEMPLATE: Probability Problems
+Step 1: Define the sample space clearly
+Step 2: Identify favorable outcomes
+Step 3: Check if events are independent or dependent
+Step 4: For "at least one" → use complement: 1 - P(none)
+Step 5: For conditional probability → use P(A|B) = P(A∩B)/P(B)
+Step 6: Verify: all probabilities sum to 1
+
+TEMPLATE: Optimization (Calculus)
+Step 1: Define objective function f(x)
+Step 2: Define constraints/domain
+Step 3: Find f'(x) and set = 0 to find critical points
+Step 4: Evaluate f''(x) at critical points (sign test)
+Step 5: Check boundary values if closed interval
+Step 6: State maximum/minimum clearly with value
+
+TEMPLATE: Limits
+Step 1: Try direct substitution first
+Step 2: If 0/0 or ∞/∞ form → try L'Hôpital or factoring
+Step 3: For trigonometric limits → use standard results (sin x/x → 1)
+Step 4: For polynomial ratios at ∞ → divide by highest power
+Step 5: Verify result is finite and reasonable
+
+TEMPLATE: Matrix/Determinant Problems
+Step 1: Identify dimensions and operation required
+Step 2: For det: use cofactor expansion along row with most zeros
+Step 3: For inverse: compute det first, if 0 then inverse doesn't exist
+Step 4: For eigenvalues: solve characteristic equation det(A-λI)=0
+Step 5: For linear system: check det(A) first
+
+COMMON JEE TRAPS:
+1. Range of functions: always check domain restrictions
+2. Probability: sample space must be exhaustive and mutually exclusive
+3. Limits: one-sided limits must agree for limit to exist
+4. Matrices: dimension compatibility check before multiplication
+5. Modulus equations: |f(x)| = g(x) → two cases: f(x) = g(x) and f(x) = -g(x)
+6. Logarithm equations: check for valid domain (argument > 0, base > 0 and ≠ 1)
+7. Trigonometric equations: general solutions often needed
+8. Integration: don't forget absolute value in ln|x|

@@ -1,0 +1,62 @@
+TOPIC: Calculus
+SUBTOPIC: Limits
+lim(x→a) f(x) = L means f(x) approaches L as x approaches a
+L'Hôpital's Rule: If lim gives 0/0 or ∞/∞, then lim f(x)/g(x) = lim f'(x)/g'(x)
+
+Standard limits:
+lim(x→0) sin(x)/x = 1
+lim(x→0) (1 - cos x)/x = 0
+lim(x→0) (eˣ - 1)/x = 1
+lim(x→0) ln(1+x)/x = 1
+lim(x→∞) (1 + 1/x)ˣ = e
+lim(x→0) (1 + x)^(1/x) = e
+
+SUBTOPIC: Derivatives - Basic Rules
+d/dx [c] = 0 (constant)
+d/dx [xⁿ] = nxⁿ⁻¹ (power rule)
+d/dx [eˣ] = eˣ
+d/dx [ln x] = 1/x
+d/dx [aˣ] = aˣ ln(a)
+d/dx [sin x] = cos x
+d/dx [cos x] = -sin x
+d/dx [tan x] = sec²x
+d/dx [cot x] = -csc²x
+d/dx [sec x] = sec x tan x
+d/dx [csc x] = -csc x cot x
+
+SUBTOPIC: Derivative Rules
+Sum rule: (f + g)' = f' + g'
+Product rule: (fg)' = f'g + fg'
+Quotient rule: (f/g)' = (f'g - fg') / g²
+Chain rule: d/dx[f(g(x))] = f'(g(x)) × g'(x)
+
+SUBTOPIC: Inverse Trig Derivatives
+d/dx [sin⁻¹x] = 1/√(1-x²)
+d/dx [cos⁻¹x] = -1/√(1-x²)
+d/dx [tan⁻¹x] = 1/(1+x²)
+
+SUBTOPIC: Applications of Derivatives
+Critical points: f'(x) = 0 or undefined
+Second derivative test:
+- f''(x) > 0 → local minimum
+- f''(x) < 0 → local maximum
+- f''(x) = 0 → inflection point (check further)
+
+Increasing: f'(x) > 0
+Decreasing: f'(x) < 0
+Concave up: f''(x) > 0
+Concave down: f''(x) < 0
+
+SUBTOPIC: Integration Basics
+∫xⁿ dx = xⁿ⁺¹/(n+1) + C, n ≠ -1
+∫1/x dx = ln|x| + C
+∫eˣ dx = eˣ + C
+∫sin x dx = -cos x + C
+∫cos x dx = sin x + C
+∫sec²x dx = tan x + C
+
+COMMON MISTAKES:
+- Forgetting the chain rule for composite functions
+- Not checking domain when taking derivatives of log/sqrt
+- Confusing local and global maxima/minima
+- Forgetting +C in indefinite integrals

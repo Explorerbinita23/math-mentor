@@ -1,0 +1,48 @@
+TOPIC: Probability
+SUBTOPIC: Basic Probability
+P(A) = Number of favorable outcomes / Total outcomes
+0 ≤ P(A) ≤ 1
+P(A') = 1 - P(A) [complement rule]
+
+SUBTOPIC: Addition Rule
+P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+For mutually exclusive events: P(A ∪ B) = P(A) + P(B)
+
+SUBTOPIC: Multiplication Rule
+P(A ∩ B) = P(A) × P(B|A) = P(B) × P(A|B)
+For independent events: P(A ∩ B) = P(A) × P(B)
+
+SUBTOPIC: Conditional Probability
+P(A|B) = P(A ∩ B) / P(B), P(B) ≠ 0
+Events A and B are independent if P(A|B) = P(A)
+
+SUBTOPIC: Bayes' Theorem
+P(A|B) = P(B|A) × P(A) / P(B)
+P(B) = Σ P(B|Aᵢ) × P(Aᵢ) [total probability]
+
+SUBTOPIC: Permutations and Combinations
+Permutation (order matters): P(n,r) = n! / (n-r)!
+Combination (order doesn't matter): C(n,r) = n! / (r! × (n-r)!)
+C(n,0) = C(n,n) = 1
+C(n,r) = C(n, n-r)
+
+SUBTOPIC: Binomial Distribution
+P(X = k) = C(n,k) × pᵏ × (1-p)^(n-k)
+Mean: μ = np
+Variance: σ² = np(1-p)
+
+SUBTOPIC: Expected Value
+E(X) = Σ xᵢ × P(xᵢ)
+E(aX + b) = a×E(X) + b
+Var(X) = E(X²) - [E(X)]²
+
+COMMON MISTAKES:
+- Confusing permutation with combination (check if order matters)
+- Forgetting to subtract intersection in addition rule
+- Assuming events are independent without verification
+- P(A|B) ≠ P(B|A) in general (base rate fallacy)
+
+SOLUTION TEMPLATES:
+For "at least one" problems: P(at least one) = 1 - P(none)
+For "exactly k" problems: Use binomial formula
+For card/ball problems: Define sample space clearly first

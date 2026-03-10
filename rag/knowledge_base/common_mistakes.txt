@@ -1,0 +1,68 @@
+TOPIC: Common Mistakes & Pitfalls in JEE Math
+
+CATEGORY: Algebra Mistakes
+1. √(a²+b²) ≠ a+b → This is one of the most frequent errors
+   Correct: √(a²+b²) cannot be simplified further (in general)
+   
+2. (a+b)² ≠ a²+b² → Missing the cross term 2ab
+   Correct: (a+b)² = a²+2ab+b²
+   
+3. log(a+b) ≠ log(a)+log(b)
+   Correct: log(ab) = log(a)+log(b) [product rule]
+   
+4. Division by zero: if (x-2)(x-3)=0, don't cancel (x-2) from both sides
+   
+5. When solving |x-3| = 5: two cases needed
+   Case 1: x-3 = 5 → x=8
+   Case 2: x-3 = -5 → x=-2
+
+CATEGORY: Calculus Mistakes
+1. Forgetting chain rule: d/dx[sin(x²)] = cos(x²) × 2x NOT just cos(x²)
+   
+2. Product rule errors: d/dx[x²sin(x)] = 2x·sin(x) + x²·cos(x) NOT just 2x·sin(x)
+   
+3. Integration constant: indefinite integral ALWAYS needs +C
+   
+4. Limits: lim(x→0) sin(x)/x = 1 ONLY when x is in RADIANS
+   
+5. Differentiability implies continuity, but NOT vice versa
+
+CATEGORY: Probability Mistakes
+1. P(A and B) = P(A)×P(B) ONLY if events are INDEPENDENT
+   For dependent events: P(A∩B) = P(A)×P(B|A)
+   
+2. "At least one" problems: ALWAYS use complement
+   P(at least 1) = 1 - P(0 occurrences)
+   
+3. Combinations vs Permutations:
+   - "How many ways to choose" → Combination C(n,r)
+   - "How many ways to arrange" → Permutation P(n,r)
+   
+4. Conditional probability: P(A|B) ≠ P(B|A) [asymmetric!]
+
+CATEGORY: Linear Algebra Mistakes  
+1. AB ≠ BA in general (matrix multiplication is non-commutative)
+   
+2. (AB)⁻¹ = B⁻¹A⁻¹ NOT A⁻¹B⁻¹ (order reverses)
+   
+3. det(A+B) ≠ det(A)+det(B)
+   
+4. If det(A)=0, matrix A has NO inverse (singular matrix)
+   
+5. Eigenvalues of A² are squares of eigenvalues of A
+   But eigenvectors remain the same
+
+CATEGORY: Domain & Range Pitfalls
+- √x: domain is x ≥ 0
+- ln(x): domain is x > 0
+- 1/x: domain is x ≠ 0
+- tan(x): undefined at x = π/2 + nπ
+- sin⁻¹(x): domain is [-1, 1], range is [-π/2, π/2]
+- log_a(x): base a must satisfy a > 0 and a ≠ 1
+
+VERIFICATION CHECKLIST:
+□ Did I check domain restrictions?
+□ Did I verify my answer by substitution?
+□ Are all probabilities between 0 and 1?
+□ Does the answer make physical/logical sense?
+□ Did I address all cases (e.g., both ± in quadratic formula)?

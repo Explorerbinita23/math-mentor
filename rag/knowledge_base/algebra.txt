@@ -1,0 +1,52 @@
+TOPIC: Algebra
+SUBTOPIC: Quadratic Equations
+
+Standard form: ax² + bx + c = 0
+Quadratic formula: x = (-b ± √(b²-4ac)) / 2a
+Discriminant: D = b² - 4ac
+- D > 0: two distinct real roots
+- D = 0: one repeated real root
+- D < 0: two complex (imaginary) roots
+
+Sum of roots: α + β = -b/a
+Product of roots: α × β = c/a
+
+Factored form: a(x - α)(x - β) = 0
+
+SUBTOPIC: Algebraic Identities
+(a + b)² = a² + 2ab + b²
+(a - b)² = a² - 2ab + b²
+(a + b)(a - b) = a² - b²
+(a + b)³ = a³ + 3a²b + 3ab² + b³
+(a - b)³ = a³ - 3a²b + 3ab² - b³
+a³ + b³ = (a + b)(a² - ab + b²)
+a³ - b³ = (a - b)(a² + ab + b²)
+
+SUBTOPIC: Arithmetic Progression (AP)
+nth term: aₙ = a + (n-1)d
+Sum of n terms: Sₙ = n/2 × [2a + (n-1)d] = n/2 × (first + last)
+where a = first term, d = common difference
+
+SUBTOPIC: Geometric Progression (GP)
+nth term: aₙ = a × r^(n-1)
+Sum of n terms: Sₙ = a(rⁿ - 1)/(r - 1), r ≠ 1
+Sum of infinite GP (|r| < 1): S∞ = a/(1 - r)
+where a = first term, r = common ratio
+
+SUBTOPIC: Binomial Theorem
+(a + b)ⁿ = Σ C(n,k) × a^(n-k) × bᵏ, k from 0 to n
+General term: T(r+1) = C(n,r) × a^(n-r) × bʳ
+C(n,r) = n! / (r! × (n-r)!)
+
+SUBTOPIC: Logarithms
+log_a(mn) = log_a(m) + log_a(n)
+log_a(m/n) = log_a(m) - log_a(n)
+log_a(mⁿ) = n × log_a(m)
+Change of base: log_a(b) = log_c(b) / log_c(a)
+log_a(a) = 1, log_a(1) = 0
+Natural log: ln(e) = 1, ln(1) = 0
+
+COMMON MISTAKES:
+- √(a² + b²) ≠ a + b
+- log(a + b) ≠ log(a) + log(b)
+- (a + b)² ≠ a² + b² (missing 2ab term)
